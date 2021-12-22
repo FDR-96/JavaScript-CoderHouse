@@ -9,11 +9,11 @@ let edad = parseInt(prompt("Ingrese su Edad."));
 let antiguedad = parseInt(prompt("Ingrese cuantos años de antigüedad tiene."));
 confirm("!El resultado se puede ver en consola!");
 if(edad >= 60 && antiguedad < 25){
-    console.log("Con una edad de " + edad + " años y con una antigüedad de " + antiguedad + "años, te corresponde una Jubilacion por edad."); 
+    console.log("Con una edad de " + edad + " años y con una antigüedad de " + antiguedad + " años, te corresponde una Jubilacion por edad."); 
 }else if(edad < 60 && antiguedad >= 25){
-    console.log("Con una edad de " + edad + "años y con una antigüedad de " + antiguedad + "años, te corresponde una Jubilacion por antigüedad anticipada."); 
+    console.log("Con una edad de " + edad + " años y con una antigüedad de " + antiguedad + " años, te corresponde una Jubilacion por antigüedad anticipada."); 
 }else if(edad >= 60 && antiguedad >= 25){
-    console.log("Con una edad de " + edad + "años y con una antigüedad de " + antiguedad + "años, te corresponde una Jubilacion por antiguedad y edad adulta.") 
+    console.log("Con una edad de " + edad + " años y con una antigüedad de " + antiguedad + " años, te corresponde una Jubilacion por antiguedad y edad adulta.") 
 }else{
-    console.log("Con una edad de " + edad + "años y con una antigüedad de " + antiguedad + "años, aun no  te corresponde una jubilacion.") 
+    console.log("Con una edad de " + edad + " años y con una antigüedad de " + antiguedad + " años, aun no  te corresponde una jubilacion.") 
 }
