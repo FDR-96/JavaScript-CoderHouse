@@ -2,8 +2,8 @@
 Autor: Federico Roldan.
 Clase: 4.
 Desafio: Funciones relacionadas.
-Informacion sobre el ejercicio: Utilizare la conguencia de Zeller para calcular el dia en el que nacio una persona. La conguencia de Zeller nos permite calcular
-el dia de la semana a partir de el año, mes y dia.
+Informacion sobre el ejercicio: Utilizare la congruencia de Zeller para calcular el día en el que nació una persona. La congruencia de Zeller nos permite calcular
+el día de la semana a partir de el año, mes y día.
 Voy a usar la fórmula listada en la wikipedia, en donde se recibe el año, mes y día. A partir de ellos se calcula a, y, m y d.
 Link de la wikipedia: https://es.wikipedia.org/wiki/Congruencia_de_Zeller
  */
