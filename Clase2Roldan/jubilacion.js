@@ -3,7 +3,7 @@
 2.- Las personas adscritas a la jubilación por antigüedad anticipada deben tener menos de 60 años y una antigüedad en su empleo de 25 años o más.
 3.- Las personas adscritas a la jubilación por antigüedad adulta deben tener 60 años o más y una antigüedad en su empleo de 25 años o más.
 */
-
+ 
 console.log("¡Hola Fede! Para saber que tipo de Jubilacion le corresponde, ingrese su edad y sus años de antigüedad.");
 let edad = parseInt(prompt("Ingrese su Edad."));
 let antiguedad = parseInt(prompt("Ingrese cuantos años de antigüedad tiene."));
@@ -17,3 +17,4 @@ if(edad >= 60 && antiguedad < 25){
 }else{
     console.log("Con una edad de " + edad + " años y con una antigüedad de " + antiguedad + " años, aun no  te corresponde una jubilacion.") 
 }
+ 
