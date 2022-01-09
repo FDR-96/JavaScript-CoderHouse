@@ -9,8 +9,8 @@ Informacion sobre el ejercicio: Calcula cuanto vas a gastar si realizas compras 
  */
 
 var IngresarMonto = () => {
-    let monto = parseInt(prompt("Ingrese el monto de su compra en dolares"));
-    let usdHoy = parseInt(prompt("Ingrese el valor del dolar oficial"));
+    let monto = parseFloat(prompt("Ingrese el monto de su compra en dolares"));
+    let usdHoy = parseFloat(prompt("Ingrese el valor del dolar oficial"));
     return [monto, usdHoy]
 }
 
