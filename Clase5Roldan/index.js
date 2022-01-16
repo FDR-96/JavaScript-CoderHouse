@@ -9,15 +9,21 @@ Informacion sobre el ejercicio: Calcula cuanto vas a gastar si realizas compras 
  */
 
 
-function Producto(description, amount, weight){
-    this.description = description;
-    this.weight = weight;
-    this.amount = amount;
-    this.mostrar = function(){    
-        let[ars, impuestoAduanero, impuestoDolarTurista, total] = CalcularImpuestosProductos(this.amount);
-        console.log(this.description, this.amount + "U$D", this.weight + "Kg");
-        console.log(ars, impuestoAduanero, impuestoDolarTurista,  total);
+class Producto {
+    constructor(description, amount, weight) {
+        this.description = description;
+        this.weight = weight;
+        this.amount = amount
     }
+    mostrar() {
+        let [ars, impuestoAduanero, impuestoDolarTurista, total] = CalcularImpuestosProductos(this.amount);
+        console.log(producto.description + " Monto: " + producto.amount + "U$D Peso: ", producto.weight + "Kg");
+        console.log( "Valor en Pesos: " + ars + "AR$");
+        console.log( "Impuesto Aduanero: " + impuestoAduanero + "AR$"); 
+        console.log( "Impuesto Dolar Turista: " + impuestoDolarTurista + "AR$");
+        console.log( "Total: " + total + "AR$")
+    }
+    
 } 
 
 

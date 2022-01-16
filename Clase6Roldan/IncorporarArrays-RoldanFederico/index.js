@@ -1,7 +1,7 @@
 /* 
 Autor: Federico Roldan.
-Clase: 5.
-Desafio: Pro.
+Clase: 6.
+Desafio: Incorporar Arrays.
 Informacion sobre el ejercicio: Calcula cuanto vas a gastar si realizas compras en el exterior o por internet desde Argentina.
 - Calcular el importe para el impuesto Aduanero del 50%.
 - Calcular el importe para el impuesto Dolar Turista del 30%.
@@ -9,15 +9,15 @@ Informacion sobre el ejercicio: Calcula cuanto vas a gastar si realizas compras 
  */
 
 
-function Producto(description, amount, weight){
-    this.description = description;
-    this.weight = weight;
-    this.amount = amount;
-    this.mostrar = function(){    
-        let[ars, impuestoAduanero, impuestoDolarTurista, total] = CalcularImpuestosProductos(this.amount);
-        console.log(this.description, this.amount + "U$D", this.weight + "Kg");
-        console.log(ars, impuestoAduanero, impuestoDolarTurista,  total);
-        return [ars, impuestoAduanero, impuestoDolarTurista, total] 
+class Producto {
+    constructor(description, amount, weight) {
+        this.description = description;
+        this.weight = weight;
+        this.amount = amount
+    }
+    calcular () {
+        let [ars, impuestoAduanero, impuestoDolarTurista, total] = CalcularImpuestosProductos(this.amount);
+        return [ars, impuestoAduanero, impuestoDolarTurista, total]
     }
 } 
 
@@ -59,6 +59,15 @@ Recorremos el array y mostramos todos los datos de los productos
 */
 
 for (let producto of arrayProducto){
+
+    console.log(producto.description + " Monto:" + producto.amount + "U$D Peso:", producto.weight + "Kg");
+    
+    let [ars, impuestoAduanero, impuestoDolarTurista, total] = Producto.mostrar();
+    console.log( "Valor en Pesos" + ars + "AR$");
+    console.log( "Impuesto Aduanero" + impuestoAduanero + "AR$"); 
+    console.log( "Impuesto Dolar Turista" + impuestoDolarTurista + "AR$");
+    console.log( "Total" + total + "AR$")
+    /* 
     document.write("<br>");
     document.write("<H2>Descripcion: " + producto.description + "</H2>");
     document.write("<H3>Monto: " + producto.amount + "U$D</H3>");
@@ -68,6 +77,7 @@ for (let producto of arrayProducto){
     document.write("<H3>Monto en pesos: " + ars + "AR$</H3>");
     document.write("<H3>Impuesto Aduanero: " + impuestoAduanero + "AR$</H3>");
     document.write("<H3>Impuesto Dolar Turista: " + impuestoDolarTurista + "AR$</H3>");
-    document.write("<H3>Total a pagar: " + total + "AR$</H3>");
+    document.write("<H3>Total a pagar: " + total + "AR$</H3>"); 
+    */
     
 }
