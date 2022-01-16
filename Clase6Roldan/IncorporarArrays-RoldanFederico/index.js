@@ -60,24 +60,23 @@ Recorremos el array y mostramos todos los datos de los productos
 
 for (let producto of arrayProducto){
 
-    console.log(producto.description + " Monto:" + producto.amount + "U$D Peso:", producto.weight + "Kg");
+    console.log(producto.description + " Monto: " + producto.amount + "U$D Peso: ", producto.weight + "Kg");
     
-    let [ars, impuestoAduanero, impuestoDolarTurista, total] = Producto.mostrar();
-    console.log( "Valor en Pesos" + ars + "AR$");
-    console.log( "Impuesto Aduanero" + impuestoAduanero + "AR$"); 
-    console.log( "Impuesto Dolar Turista" + impuestoDolarTurista + "AR$");
-    console.log( "Total" + total + "AR$")
-    /* 
+    let [ars, impuestoAduanero, impuestoDolarTurista, total] = producto.calcular();
+    console.log( "Valor en Pesos: " + ars + "AR$");
+    console.log( "Impuesto Aduanero: " + impuestoAduanero + "AR$"); 
+    console.log( "Impuesto Dolar Turista: " + impuestoDolarTurista + "AR$");
+    console.log( "Total: " + total + "AR$")
+    
+    
     document.write("<br>");
     document.write("<H2>Descripcion: " + producto.description + "</H2>");
     document.write("<H3>Monto: " + producto.amount + "U$D</H3>");
     document.write("<H3>Peso: " + producto.weight + "KG</H3>");
-
-    let [ars, impuestoAduanero, impuestoDolarTurista, total] = producto.mostrar();
     document.write("<H3>Monto en pesos: " + ars + "AR$</H3>");
     document.write("<H3>Impuesto Aduanero: " + impuestoAduanero + "AR$</H3>");
     document.write("<H3>Impuesto Dolar Turista: " + impuestoDolarTurista + "AR$</H3>");
     document.write("<H3>Total a pagar: " + total + "AR$</H3>"); 
-    */
+
     
 }
