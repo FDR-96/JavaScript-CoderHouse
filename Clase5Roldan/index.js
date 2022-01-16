@@ -16,8 +16,8 @@ class Producto {
         this.amount = amount
     }
     mostrar() {
+        console.log(this.description + " Monto: " + this.amount + "U$D Peso: ", this.weight + "Kg");
         let [ars, impuestoAduanero, impuestoDolarTurista, total] = CalcularImpuestosProductos(this.amount);
-        console.log(producto.description + " Monto: " + producto.amount + "U$D Peso: ", producto.weight + "Kg");
         console.log( "Valor en Pesos: " + ars + "AR$");
         console.log( "Impuesto Aduanero: " + impuestoAduanero + "AR$"); 
         console.log( "Impuesto Dolar Turista: " + impuestoDolarTurista + "AR$");
