@@ -78,7 +78,7 @@ do{
 while(result);
 
 
-
+// Creamos un array para ordenar los productos segun el monto de mayor a menor.
 let ordenadosPorMonto = [];
 ordenadosPorMonto = arrayProducto.map(elemento => elemento);
 ordenadosPorMonto = arrayProducto;
@@ -86,7 +86,7 @@ ordenadosPorMonto.sort(function(a, b){
     return b.amount - a.amount;
 });
 
-// Recorremos el array y mostramos todos los datos de los productos en nuestra pagina.
+// Recorremos el array y mostramos todos los datos de los productos ordenados en nuestra pagina.
 for (let producto of ordenadosPorMonto){
    
     //Llamamos a la funcion calcular() para que realice las operaciones necesarias y mostramos los datos obtenidos.
