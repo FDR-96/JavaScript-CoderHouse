@@ -1,6 +1,6 @@
 /* 
 # Autor: Federico Roldan.
-# Proyecto Final Primera Entrega: Servicio Curier Condor.
+# Ejercicio: Interactuar con HTML.
 # Informacion sobre el Proyecto: 
         En mi proyecto se cotiza una importacion con un servicio curier ficticio llamado "CONDOR", se podran ir
     sumando productos y se mostrara detalladamente los costos que se van a tener, dependiendo de las variables ingresadas. 
@@ -97,16 +97,5 @@ for (let producto of arrayProducto){
                             <p> Total a pagar: ${total} AR$</p>`;
 
     document.body.appendChild(contenedor);
-/*     document.write("<br>");
-    document.write("<h2>Descripcion: " + producto.description + "</h2>");
-    document.write("<h3>Monto: </span>" + producto.amount + "U$D</span></h3>");
-    document.write("<h3>Peso: </span>" + producto.weight + "KG</span></h3>");
-    document.write("<h3>Cantidad: </span>" + producto.quantity + "KG</span></h3>");
-    //Llamamos a la funcion calcular() para que realice las operaciones necesarias y mostramos los datos obtenidos.
-    let [ars, impuestoAduanero, impuestoDolarTurista, shipping, total] = producto.calcular();
-    document.write("<h3>Monto en pesos: <span>" + ars + "AR$</span></h3>");
-    document.write("<h3>Impuesto Aduanero: <span>" + impuestoAduanero + "AR$</span></h3>");
-    document.write("<h3>Impuesto Dolar Turista: <span>" + impuestoDolarTurista + "AR$</span></h3>");
-    document.write("<h3>Envio: <span>" + shipping + "AR$</h3>");
-    document.write("<h3>Total a pagar:  " + total + "AR$</h3>"); */
+
 }
