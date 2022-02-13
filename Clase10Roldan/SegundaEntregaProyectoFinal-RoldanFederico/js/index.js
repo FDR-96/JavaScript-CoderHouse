@@ -1,6 +1,6 @@
 /* 
 # Autor: Federico Roldan.
-# Ejercicio: Incorporar Eventos.
+# Segunda Entrega Proyecto Final
 # Informacion sobre el Proyecto: 
         En mi proyecto se cotiza una importacion con un servicio curier ficticio llamado "CONDOR", se podran ir
     sumando productos y se mostrara detalladamente los costos que se van a tener, dependiendo de las variables ingresadas. 
@@ -33,14 +33,6 @@ class Producto {
         console.log(this.description, this.amount + "U$D", this.weight + "Kg", this.quantity + " Unidades ");
         console.log(ars, impuestoAduanero, impuestoDolarTurista, shipping, total);
         return [ars, impuestoAduanero, impuestoDolarTurista, shipping, total];
-    }
-    eliminar(){
-        delete this.key;
-        delete this.descripcion;
-        delete this.weight;
-        delete this.amount;
-        delete this.quantity;
-        return;
     }
 } 
 
