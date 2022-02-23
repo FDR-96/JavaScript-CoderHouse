@@ -1,0 +1,209 @@
+header, body {
+    width: 960px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #E1E9EE;
+ 
+}
+.container{
+    position: absolute;
+    height: 50px;
+    width: 100px;
+    display: inline-block;
+    margin-left: 50px;
+    text-align: center;
+}
+
+.empresa h2{
+   
+    font-size: 24px;
+    color: #066DB8;
+
+}
+.empresa h2:hover{
+    -webkit-transition:all .9s ease-in-out;
+    filter: grayscale(80%);
+}
+
+.texto p{
+    font-weight: 500;
+    font-size: 10px;
+    color: #222222;
+    margin-top: -25px;  
+}
+
+.texto2 {
+    text-align: center;
+    width: 400px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #066DB8;
+    margin-top: 20px;  
+}
+
+
+.formulario{
+    justify-content:center;
+    padding: 5% 10% 0% 10%;
+    margin-top: 50px;
+    position: relative;
+    height: auto;
+    width: 80%;
+    display:flex;
+    flex-flow: row;
+    background-color:#ffffffde;
+    border-radius: 30px;
+    box-shadow: 15px 15px 30px #bebebe,
+                -15px -15px 30px #ffffff;
+}
+.bloque-derecha{
+    width: 50%;
+    height: 90%; 
+}
+
+.bloque-izquierda{
+    width: 50%;
+    height: 90%;
+}
+
+form{
+    justify-content:center;
+    color: white;
+    width: auto;
+    height: 90%;
+    display: flex;
+    flex-flow: column;
+    align-items:center;
+}
+input{
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 13px;
+    padding: 15px 0px;
+    margin: 10px;
+    transition:all 300ms;
+    color: #242424de;
+    background-color: #00000000;
+    width: 250px;
+    font-family: 'Barlow', sans-serif;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+   
+}
+
+/* From cssbuttons.io by @alexroumi */
+button {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom:20px;
+    padding: 10px 10px 10px 10px; 
+    width: 150px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #ffffff;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+   }
+   
+   button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #063f68;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+   
+   button:hover {
+    color: #e8e8e8;
+   }
+   
+   button:hover::before {
+    width: 100%;
+   }
+#btn-eliminar::before{
+    background-color: #eb4545;
+}
+#mostrar {
+    padding: 0% 20% 0% 20%;
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+
+}
+
+#total-a-Pagar{
+    margin: 10px 0px 10px 0px;
+    height: auto;
+    width: 100%;
+    background-color:#045c9b;
+    text-align: center;
+}
+#total-a-Pagar p{
+    margin-top: 15px;
+    font-weight: 550;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+#mostrar .contenedor{
+    margin-top: 50px;
+        justify-content:center;
+        color: white;
+        width: 100%;
+        height: 90%;
+        display: flex;
+        flex-flow: column;
+        background-color:#ffffffde;
+        align-items:center;
+        border-radius: 30px;
+        box-shadow: 15px 15px 30px #bebebe,
+                    -15px -15px 30px #ffffff;
+}
+
+.contenedor h3{
+    text-align: center;
+    color: #063f68;
+    font-size: 500;
+    
+}
+
+.contenedor p{
+    margin-top: -5px;
+    margin-left: 10px;
+    color: rgb(41, 41, 41);
+
+}
+
+
+span{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #0a2030;
+}
+h3{
+    font-weight: 550px;
+    font-size: 18px;
+    color: #0a2030;
+}
+h2{
+    font-weight: 550;
+    font-size: 18px;
+    color: #063f68;
+}
