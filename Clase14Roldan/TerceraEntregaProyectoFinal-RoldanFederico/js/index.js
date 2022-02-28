@@ -27,18 +27,6 @@ api.onreadystatechange = function() {
 })
 
 /* 
-$(document).ready(function() {
-    $.get(URLGET, function(respuesta, estado) {
-        if (estado === "success") {
-            let datos = respuesta;
-            //let casa = datos[6][0].venta;
-            let casa = datos[0];
-            dolarHoy = parseFloat(casa["casa"].venta);
-            console.log(dolarHoy);
-        }
-    });
-}) */
-/* 
 Creamos el objeto Producto con sus propiedades y funcionalidad. Tambien añadimos un constructor para crear nuevos productos cuando
 el usuario lo requiera.
 La funcion calcular transformara divisas, calculara impuestos, transpoerte y retoranara esos valores para luego ser visualizados. 
