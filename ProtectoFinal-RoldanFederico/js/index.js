@@ -17,23 +17,6 @@ var logoAnimation = $(".container");
 var dollarAnimation = $(".dolar-hoy");
 //Eventos botones
 $("#btn-agregar").click(AddToList);
-/* 
-    Obtenemos el valor del Dolar de la API dolarSi
-*/
-const ApiGet = () => {
-    let URLGET = 'https://www.dolarsi.com/api/api.php?type=valoresprincipales';
-    const api = new XMLHttpRequest();
-    api.open('GET', URLGET, true);
-    api.send();
-    api.onreadystatechange = function() {
-        if (this.status == 200 && this.readyState == 4) {
-            let data = JSON.parse(this.responseText);
-            dollarToday = parseFloat(data[0]["casa"].venta);
-            $(".pesos-hoy-mostrar").text(dollarToday + "AR$");
-            console.log(dollarToday);
-        }
-    }
-}
 
 /* 
     Creamos el objeto Producto con sus propiedades y funcionalidad. Tambien añadimos un constructor para crear nuevos productos cuando
@@ -85,6 +68,26 @@ const CalculateShipping = (weight) => {
         Realizamos la conversion de dolares a pesos con el precio de dolar obtenido de la API.
     */
 const DollarToPesos = (usd) => { return parseFloat(usd * dollarToday) }
+
+
+
+/* 
+    Obtenemos el valor del Dolar de la API dolarSi
+*/
+const ApiGet = () => {
+    let URLGET = 'https://www.dolarsi.com/api/api.php?type=valoresprincipales';
+    const api = new XMLHttpRequest();
+    api.open('GET', URLGET, true);
+    api.send();
+    api.onreadystatechange = function() {
+        if (this.status == 200 && this.readyState == 4) {
+            let data = JSON.parse(this.responseText);
+            dollarToday = parseFloat(data[0]["casa"].venta);
+            $(".pesos-hoy-mostrar").text(dollarToday + "AR$");
+            console.log(dollarToday);
+        }
+    }
+}
 
 /* 
     Añadimos nuevos productos y almacenamos en el Local Storage.
