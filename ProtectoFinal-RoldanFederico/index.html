@@ -1,24 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Condor - Servicio Curier</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/ad7915c94c.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header> 
-        <div class="contenedor">
-        <div class="empresa"><h2>CONDOR.</h2></div>
-        <div class="texto"><p>SERVICIO DE CURIER</p></div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <header>
+        <div class="container">
+            <div class="empresa">
+                <h2>CONDOR.</h2>
+            </div>
+            <div class="texto">
+                <p>SERVICIO DE CURIER</p>
+            </div>
         </div>
     </header>
-    <main>
-        <h2 class="texto2">Cotiza tu Envio</h2>
-    </main>
 
+    <div class="bloques">
+        <div class="formulario">
+            <div class="bloque-izquierda">
+                <form action="POST" action="#">
+                    <h2 class="texto2">Cotizá tu Envio</h2>
+                    <input type="text" id="description" name="description" placeholder="Descripción">
+                    <input type="float" id="amount" name="amount" placeholder="Monto del Producto U$D">
+                    <input type="float" id="weight" name="weight" placeholder="Peso del Producto KG">
+                    <input type="number" id="quantity" name="quantity" placeholder="Cantidad">
+                    <button type="button" id="btn-agregar" placeholder="Agregar" value="Agregar">Agregar</button>
+                </form>
+                <div class="dolar-hoy">
+                    <table>
+                        <td class="dolar-hoy-mostrar">1U$D</td>
+                        <td>=</td>
+                        <td class="pesos-hoy-mostrar">200AR$</td>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="bloque-derecha">
+            <div id="mostrar"></div>
+            <div class="total-servicio">
+                <h3>TOTAL: </h3>
+                <p class="total-mostrar">2000AR$</p>
+                <p class="items">1/1</p>
+            </div>
+        </div>
+    </div>
+    </div>
 
     <script src="js/index.js"></script>
 </body>
+
 </html>
